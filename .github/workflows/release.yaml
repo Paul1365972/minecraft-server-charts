@@ -45,6 +45,6 @@ jobs:
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.0.0-rc.2
         with:
-          charts_repo_url: "https://${{ github.repository_owner	 }}.github.io/$REPOSITORY_NAME"
+          charts_repo_url: "https://${{ github.repository_owner	 }}.github.io/${{ env.REPOSITORY_NAME }}"
         env:
           CR_TOKEN: "${{ github.token }}"
