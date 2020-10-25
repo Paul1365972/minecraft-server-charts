@@ -45,7 +45,7 @@ minecraftServer:
     SEED: "fshhu"
     MOTD: "HHU Inofficial Anarchy Server"
   # TODO
-    ICON: "https://gerowollgarten.de/wp-content/uploads/2017/11/Heine-Illu_medallion-Kopie.png"
+    ICON: "https://raw.githubusercontent.com/Paul1365972/fshhu-server/master/icons/hhu-logo.png"
     DIFFICULTY: "hard"
     SPAWN_PROTECTION: "0"
     VIEW_DISTANCE: "12"
