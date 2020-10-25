@@ -3,9 +3,9 @@ entries:
   minecraft:
   - apiVersion: v1
     appVersion: SeeValues
-    created: "2020-10-25T14:48:51.816596808Z"
+    created: "2020-10-25T15:03:16.962728728Z"
     description: Minecraft server
-    digest: 01443dd974a0047db70c03346613d93af4847113a3fcfeba93bbf107938767c0
+    digest: d546e9f38ccd779336d0bc7b57e5eafc6a60839638a047d595a6a5cbd19c0b9e
     home: https://minecraft.net/
     keywords:
     - game
@@ -24,6 +24,6 @@ entries:
     - https://github.com/itzg/docker-minecraft-server
     - https://github.com/itzg/docker-minecraft-bedrock-server
     urls:
-    - https://github.com/Paul1365972/minecraft-server-charts/releases/download/minecraft-2.0.8/minecraft-2.0.8.tgz
-    version: 2.0.8
-generated: "2020-10-25T14:48:51.700505389Z"
+    - https://github.com/Paul1365972/minecraft-server-charts/releases/download/minecraft-3.0.0/minecraft-3.0.0.tgz
+    version: 3.0.0
+generated: "2020-10-25T15:03:16.85416778Z"
