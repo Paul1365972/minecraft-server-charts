@@ -14,6 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - uses: FranzDiebold/github-env-vars-action@v1.2.1
+
       - name: Turnstyle
         uses: softprops/turnstyle@v1
         with:
@@ -41,6 +43,6 @@ jobs:
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.0.0-rc.2
         with:
-          charts_repo_url: https://itzg.github.io/minecraft-server-charts
+          charts_repo_url: "https://${{ GITHUB_REPOSITORY_OWNER }}.github.io/${{GITHUB_REPOSITORY_NAME}}"
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

@@ -1,4 +1,4 @@
-{{- if and .Values.persistence.dataDir.enabled (not .Values.persistence.dataDir.existingClaim ) -}}
+{{- if .Values.persistence.dataDir.enabled -}}
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -19,7 +19,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: {{ .Values.persistence.dataDir.Size | quote }}
+      storage: {{ .Values.persistence.dataDir.size | quote }}
 {{- if .Values.persistence.storageClass }}
 {{- if (eq "-" .Values.persistence.storageClass) }}
   storageClassName: ""
