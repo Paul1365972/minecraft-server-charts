@@ -18,7 +18,7 @@ To install the chart with the release name `minecraft`, read the [Minecraft EULA
 
 ```shell
 helm install minecraft \
-  --set minecraftServer.eula=true itzg/minecraft
+  --set minecraftServer.eula=true paul1365972-mc/minecraft
 ```
 
 This command deploys a Minecraft dedicated server with sensible defaults.
@@ -44,13 +44,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 ```shell
 helm install --name minecraft \
   --set minecraftServer.eula=true,minecraftServer.Difficulty=hard \
-  itzg/minecraft
+  paul1365972-mc/minecraft
 ```
 
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
 
 ```shell
-helm install --name minecraft -f values.yaml itzg/minecraft
+helm install --name minecraft -f values.yaml paul1365972-mc/minecraft
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)

@@ -8,7 +8,7 @@ keywords:
 - game
 - server
 sources:
-- https://github.com/itzg/minecraft-server-charts
+- https://github.com/paul1365972/minecraft-server-charts
 - https://hub.docker.com/r/itzg/minecraft-bedrock-server/~/dockerfile/
 - https://github.com/itzg/dockerfiles
 maintainers:
@@ -18,3 +18,5 @@ maintainers:
   email: jeff@billimek.com
 - name: itzg
   email: itzgeoff@gmail.com
+- name: paul1365972
+  email: paul1365972@gmail.com
