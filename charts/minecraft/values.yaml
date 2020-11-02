@@ -8,10 +8,10 @@ imageTag: latest
 resources:
   requests:
     memory: 3Gi
-    cpu: 0.5
+    cpu: 1
   limits:
     memory: 9Gi
-    cpu: 1.5
+    cpu: 2
 
 nodeSelector: {}
 
@@ -43,7 +43,7 @@ minecraftServer:
     TYPE: "PAPER"
     VERSION: "1.16.3"
     SEED: "fshhu"
-    MOTD: "HHU Inofficial Anarchy Server"
+    MOTD: "The Inofficial HHU Anarchy Server"
   # TODO
     ICON: "https://raw.githubusercontent.com/Paul1365972/fshhu-server/master/icons/hhu-logo.png"
     DIFFICULTY: "hard"
