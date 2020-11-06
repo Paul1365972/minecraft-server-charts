@@ -10,7 +10,7 @@ resources:
     memory: 3Gi
     cpu: 1
   limits:
-    memory: 9Gi
+    memory: 7Gi
     cpu: 2
 
 nodeSelector: {}
@@ -23,7 +23,7 @@ affinity: {}
 # https://hub.docker.com/r/itzg/minecraft-server/
 livenessProbe:
   initialDelaySeconds: 30
-  periodSeconds: 10
+  periodSeconds: 15
   failureThreshold: 3
   successThreshold: 1
   timeoutSeconds: 5
@@ -41,10 +41,11 @@ minecraftServer:
   env:
     EULA: "TRUE"
     TYPE: "PAPER"
-    VERSION: "1.16.3"
+    VERSION: "LATEST"
     SEED: "fshhu"
-    MOTD: "The Inofficial HHU Anarchy Server"
-  # TODO
+  # Builder: https://mctools.org/motd-creator?text=+++++++++%267The+Inofficial%26r+%26b%26lHHU%26r+%267Anarchy+Server%26r%0D%0A+%267Hosted+on%26r+%269%26lG%26r%26c%26lC%26r%26e%26lP%26r+%267by%26r+%26dPaul1365972%26r%267%2C+powered+via+%269%26lK8s%26r
+    MOTD: "\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u0020\\\\u00A77The\\\\u0020Inofficial\\\\u00A7r\\\\u0020\\\\u00A7b\\\\u00A7lHHU\\\\u00A7r\\\\u0020\\\\u00A77Anarchy\\\\u0020Server\\\\u00A7r\\\\u00A7r\\\\n\\\\u0020\\\\u00A77Hosted\\\\u0020on\\\\u00A7r\\\\u0020\\\\u00A79\\\\u00A7lG\\\\u00A7r\\\\u00A7c\\\\u00A7lC\\\\u00A7r\\\\u00A7e\\\\u00A7lP\\\\u00A7r\\\\u0020\\\\u00A77by\\\\u00A7r\\\\u0020\\\\u00A7dPaul1365972\\\\u00A7r\\\\u00A77,\\\\u0020powered\\\\u0020via\\\\u0020\\\\u00A79\\\\u00A7lK8s\\\\u00A7r"
+  # TODO Copyright eeeh?
     ICON: "https://raw.githubusercontent.com/Paul1365972/fshhu-server/master/icons/hhu-logo.png"
     DIFFICULTY: "hard"
     SPAWN_PROTECTION: "0"
@@ -54,8 +55,8 @@ minecraftServer:
     OPS: "Paul1365972"
     OVERRIDE_SERVER_PROPERTIES: "true"
     USE_AIKAR_FLAGS: "true"
-    INIT_MEMORY: "2G"
-    MAX_MEMORY: "9G"
+    INIT_MEMORY: "3G"
+    MAX_MEMORY: "7G"
     ENABLE_AUTOPAUSE: "TRUE"
     AUTOPAUSE_TIMEOUT_INIT: "90"
     AUTOPAUSE_TIMEOUT_KN: "30"
